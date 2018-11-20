@@ -1,4 +1,4 @@
-package com.test;
+package com.baseprojectrn;
 
 import android.app.Application;
 
