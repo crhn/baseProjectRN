@@ -3,7 +3,7 @@ npm install
 react-native run-(android/ios)
 
 alias rnmenu='adb shell input keyevent 82'
-alias rnlinter='./node_modules/.bin/eslint App/'
+alias rnlinter='./node_modules/.bin/eslint src/'
 
 react navigation: https://reactnavigation.org/en/
 eslint: https://eslint.org/ with airbnb rules (custom .eslintrc)

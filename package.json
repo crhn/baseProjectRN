@@ -7,11 +7,13 @@
         "test": "jest"
     },
     "dependencies": {
+        "i18next": "^12.0.0",
         "prettier": "^1.15.2",
         "prop-type": "0.0.1",
         "react": "16.6.0-alpha.8af6728",
         "react-native": "0.57.4",
         "react-native-gesture-handler": "^1.0.9",
+        "react-native-languages": "^3.0.1",
         "react-navigation": "^3.0.0"
     },
     "devDependencies": {

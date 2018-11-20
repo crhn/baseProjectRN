@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Text, View } from 'react-native';
 import LogoTitle from '../Components/logoTitle';
+import i18n from '../i18n';
 
 export default class HomeScreen extends React.Component {
     static navigationOptions = {
@@ -14,6 +15,7 @@ export default class HomeScreen extends React.Component {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Text>Home Screen</Text>
+                <Text>{i18n.t('current', { language: '!' })}</Text>
                 <Button
                     title="Go to Details"
                     onPress={() => {
