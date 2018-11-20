@@ -1,0 +1,10 @@
+git clone
+npm install
+react-native run-(android/ios)
+
+alias rnmenu='adb shell input keyevent 82'
+alias rnlinter='./node_modules/.bin/eslint App/'
+
+react navigation: https://reactnavigation.org/en/
+eslint: https://eslint.org/ with airbnb rules (custom .eslintrc)
+prettier: https://prettier.io/ (custom .prettierrc)
