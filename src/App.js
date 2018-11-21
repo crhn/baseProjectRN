@@ -5,14 +5,14 @@ import Navigation from './Navigation';
 
 export default class App extends PureComponent {
     componentWillMount() {
-        ReactNativeLanguages.addEventListener('change', this._onLanguagesChange);
+        ReactNativeLanguages.addEventListener('change', this.onLanguagesChange);
     }
 
     componentWillUnmount() {
-        ReactNativeLanguages.removeEventListener('change', this._onLanguagesChange);
+        ReactNativeLanguages.removeEventListener('change', this.onLanguagesChange);
     }
 
-    _onLanguagesChange = ({ language, languages }) => {
+    onLanguagesChange = ({ language }) => {
         i18n.changeLanguage(language);
     };
 

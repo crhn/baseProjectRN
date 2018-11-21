@@ -1,5 +1,15 @@
 {
     "translation": {
-        "current": "Le langage courant est mis à jour \"{{language}}\""
+        "alertButton": "C'est un bouton !",
+        "current": "Le langage courant est mis à jour {{language}}",
+        "detailsAgain": "Retourner au profil",
+        "firstDetails": "Premières Informations",
+        "goBack": "Retour",
+        "goToProfile": "Aller au profil",
+        "homeScreen": "Page d'accueil",
+        "info": "Info",
+        "profileScreen": "Écran du profil",
+        "updated": "Mis à jour",
+        "updateTitle": "Metre à jour le titre"
     }
 }

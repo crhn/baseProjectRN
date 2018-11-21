@@ -1,5 +1,15 @@
 {
     "translation": {
-        "current": "The current language is update \"{{language}}\""
+        "alertButton": "This is a button !",
+        "current": "The current language is update {{language}}",
+        "detailsAgain": "Go to Details... again",
+        "firstDetails": "First Details",
+        "goBack": "Go back",
+        "goToProfile": "Go to Profile",
+        "homeScreen": "Home screen",
+        "info": "Info",
+        "profileScreen": "Profile Screen",
+        "updated": "Updated !",
+        "updateTitle": "Update the title"
     }
 }

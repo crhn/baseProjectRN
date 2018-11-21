@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Text, View } from 'react-native';
+import i18n from '../i18n';
 
 export default class ProfileScreen extends React.Component {
     static navigationOptions = ({ navigation, navigationOptions }) => {
@@ -21,18 +22,20 @@ export default class ProfileScreen extends React.Component {
 
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text>Details Screen</Text>
+                <Text>{i18n.t('profileScreen')}</Text>
                 <Text>itemId: {JSON.stringify(itemId)}</Text>
                 <Text>otherParam: {JSON.stringify(otherParam)}</Text>
                 <Button
-                    title="Update the title"
-                    onPress={() => this.props.navigation.setParams({ otherParam: 'Updated!' })}
+                    title={i18n.t('updateTitle')}
+                    onPress={() =>
+                        this.props.navigation.setParams({ otherParam: i18n.t('updated') })
+                    }
                 />
                 <Button
-                    title="Go to Details... again"
+                    title={i18n.t('detailsAgain')}
                     onPress={() => this.props.navigation.navigate('Profile')}
                 />
-                <Button title="Go back" onPress={() => this.props.navigation.goBack()} />
+                <Button title={i18n.t('goBack')} onPress={() => this.props.navigation.goBack()} />
             </View>
         );
     }
