@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import CustomButton from '../Components/customButton';
 import i18n from '../i18n';
 
 export default class ProfileScreen extends React.Component {
@@ -25,17 +26,20 @@ export default class ProfileScreen extends React.Component {
                 <Text>{i18n.t('profileScreen')}</Text>
                 <Text>itemId: {JSON.stringify(itemId)}</Text>
                 <Text>otherParam: {JSON.stringify(otherParam)}</Text>
-                <Button
-                    title={i18n.t('updateTitle')}
-                    onPress={() =>
+                <CustomButton
+                    onPressAction={() =>
                         this.props.navigation.setParams({ otherParam: i18n.t('updated') })
                     }
+                    text={i18n.t('updateTitle')}
                 />
-                <Button
-                    title={i18n.t('detailsAgain')}
-                    onPress={() => this.props.navigation.navigate('Profile')}
+                <CustomButton
+                    onPressAction={() => this.props.navigation.navigate('Profile')}
+                    text={i18n.t('detailsAgain')}
                 />
-                <Button title={i18n.t('goBack')} onPress={() => this.props.navigation.goBack()} />
+                <CustomButton
+                    onPressAction={() => this.props.navigation.goBack()}
+                    text={i18n.t('goBack')}
+                />
             </View>
         );
     }

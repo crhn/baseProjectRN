@@ -6,6 +6,7 @@
     "parser": "babel-eslint",
     "extends": "airbnb",
     "rules": {
+        "implicit-arrow-linebreak": "off",
         "indent": 0,
         "object-curly-newline": [
             "off",
@@ -21,6 +22,6 @@
         "react/jsx-indent-props": 0,
         "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
         "react/jsx-one-expression-per-line": 0,
-        "react/prop-types": [1, { "ignore": ["navigation"] }]
+        "react/prop-types": ["off", { "ignore": ["navigation"] }]
     }
 }
