@@ -8,3 +8,4 @@ alias rnlinter='./node_modules/.bin/eslint src/'
 react navigation: https://reactnavigation.org/en/
 eslint: https://eslint.org/ with airbnb rules (custom .eslintrc)
 prettier: https://prettier.io/ (custom .prettierrc)
+jest: https://jestjs.io/en/

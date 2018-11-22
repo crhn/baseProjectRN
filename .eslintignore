@@ -1,0 +1,7 @@
+# Tests
+#
+/src/__tests__/*
+
+# node_modules
+#
+/src/node_modules/*
